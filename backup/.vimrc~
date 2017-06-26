@@ -19,6 +19,8 @@ Plugin 'tpope/vim-fugitive'
 "nedtree
 Plugin 'scrooloose/nerdtree'
 
+"syntastic
+Plugin 'scrooloose/syntastic'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -82,10 +84,11 @@ set hlsearch
 set tabstop=2
 
 " specify the color scheme - found in ~/.vim/colors
-colorscheme Tomorrow-Night-Bright
+colorscheme Tomorrow
 
 "show color display
 syntax on
+filetype indent plugin on
 
 au BufNewFile,BufRead *.py
 	\ set tabstop=2
